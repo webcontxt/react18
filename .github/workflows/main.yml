@@ -44,7 +44,7 @@ jobs:
       run: |
         git config --global user.name "ashishwebcontxt"
         git config --global user.email "ashish.r@webcontxt.in"
-        git remote set-url origin https://${{secrets.TEST_ACCESS_TOKEN}}@github.com/react18
+        git remote set-url origin https://${{secrets.TEST_ACCESS_TOKEN}}@github.com/webcontxt/react18
         npm run deploy
       env:
         user_name: 'github-actions[bot]'
